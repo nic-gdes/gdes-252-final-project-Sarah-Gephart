@@ -1,0 +1,483 @@
+/* GLOBAL */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* TAGS */
+
+body {
+    background-image: url('../images/acrylic-colors-in-water-abstract-background-2023-11-27-05-10-12-utc.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: verdana, Arial, PT Sans;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    background-color: rgba(0, 0, 255, 0);
+    border: none;
+}
+
+img {
+    max-width: 250px;
+}
+
+/* IDs */
+
+#logo {
+    min-width: 135px;
+    max-width: 135px;
+    padding: 5px;
+}
+
+#logo:hover .cls-2 {
+    transition: all .5s ease-in-out;
+    fill: #FFA500;
+}
+
+#moon {
+    max-width: 25px;
+}
+
+#sun {
+    min-width: 25px;
+    display: none;
+}
+
+#lightbulbani {
+    max-width: 55px;
+    animation: lp 1s;
+}
+
+#calculatorani {
+    max-width: 55px;
+    animation: caani 1s;
+}
+
+#contactani {
+    max-width: 55px;
+    animation: coani 1s;
+}
+
+#input {
+    padding: 8px;
+    border: none;
+    border-radius: 10px 0px;
+    height: 25px;
+    width: 100px;
+    margin: 15px auto;
+}
+
+/* CLASSES */
+
+
+.cls-1 {
+    fill: orange;
+  }
+
+.cls-1, .cls-2 {
+    transition: all .5s ease-in-out;
+    stroke-width: 0px;
+  }
+
+.cls-2 {
+    transition: all .5s ease-in-out;
+    fill: #333;
+  }
+
+.moon-cls-1 {
+    fill: #fff;
+    stroke-width: 0px;
+}
+
+.sun-cls-1 {
+    fill: #fff;
+    stroke-width: 0px;
+  }
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px
+}
+
+.nav-menu-stay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: #FFA500;
+}
+
+.page-link {
+    color: blue;
+}
+
+/* BUTTONS */
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.darkmode {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.darkcircle {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.dark-mode {
+    background-image: url('../images/acrylic-colors-in-water-ink-blot-abstract-backgr-2023-11-27-05-13-35-utc.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.convert-btn {
+    transition: 0.7s ease;
+    padding: 5px;
+    border: none;
+    border-radius: 0px 10px;
+    color: white;
+    background-color: #FFA500;
+    width: 100px;
+    margin: 15px auto;
+}
+
+.convert-btn:hover {
+    background-color: white;
+    color: #333333;
+}
+
+/* PAGE */
+
+.hero-bg {
+    display: flex;
+    justify-content: center;
+}
+
+.hero {
+    height: 600px;
+    width: 90%;
+    max-width: 1500px;
+    padding: 40px;
+    text-align: center;
+}
+
+.hero-content {
+    padding: 25px;
+}
+
+.page-link:hover {
+    background-color: #333333;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.about-bg {
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+}
+
+.about {
+    width: 90%;
+    max-width: 1500px;
+    padding: 40px;
+    text-align: center;
+}
+
+.about-content {
+    padding: 25px;
+    color: white;
+}
+
+.services-bg {
+    display: flex;
+    justify-content: center;
+    background-color: #c2c2c2;
+}
+
+.services {
+    width: 90%;
+    max-width: 1500px;
+    padding: 40px;
+    text-align: center;
+}
+
+.services-content {
+    padding: 25px;
+}
+
+.join-bg {
+    display: flex;
+    justify-content: center;
+    background-color: #FFA500;
+}
+
+.join {
+    width: 90%;
+    max-width: 1500px;
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+.contact-bg {
+    display: flex;
+    justify-content: center;
+    background-color: #234876;
+}
+
+.contact {
+    width: 90%;
+    max-width: 1500px;
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+.contact-content {
+    padding: 25px;
+}
+
+.page-link {
+    transition: 0.7s ease;
+    background-color: #FFA500;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+}
+
+.calc-bg {
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+    text-align: center;
+}
+
+.calc-content {
+    padding: 15px;
+    color: white;
+
+}
+
+.about-calc-bg {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.about-calc {
+    width: 90%;
+    max-width: 1500px;
+    padding: 40px;
+    text-align: center;
+}
+
+.about-calc-content {
+    padding: 25px;
+    color: #333333;
+}
+
+.footer-bg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #333333;
+    padding: 25px;
+    color: white;
+}
+
+.footer-content {
+ padding: 25px;
+}
+
+.footer-link {
+    transition: 0.7s ease;
+}
+
+.footer-link:hover {
+    color: #FFA500;
+}
+
+
+.darkmode {
+    background-image: url('../images/acrylic-colors-in-water-ink-blot-abstract-backgr-2023-11-27-05-13-35-utc.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.5s, color 0.5s;
+    padding: 0;
+  }
+
+.dark-mode-toggle {
+  color: var(--foreground);
+  border: 2px solid currentColor;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+@media(max-width:768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        gap: 0;
+        padding: 15px;
+        flex-direction: column;
+        background-color:#FFA500;
+        width: 35%;
+        text-align: center;
+        transition: all .5s ease-in-out;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-link:hover {
+        color: #333333;
+    }
+}
+
+@media only screen and (min-width:1420px) {
+    .grid-container {
+        grid-template: auto / 3fr 3fr 3fr;
+    }
+    
+    /* .about-content {
+        grid-column: 3 / 3;
+        grid-row: 1 / 4;
+    } */
+
+    .about-content img {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+}
+
+
+@keyframes lp {
+    from {
+        opactiy: 0;
+        transform: translateY(20%);
+        transform: rotate(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes caani {
+    from {
+        opactiy: 0;
+        transform: translateY(20%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes coani {
+    from {
+        opactiy: 0;
+        transform: rotate(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
